@@ -1,0 +1,84 @@
+%Copyright Antonio De Gaetano 2015
+% Questo documento è stato scritto da Antonio De Gaetano, laureando in Scienze Biologiche, come tesi di laurea.
+\documentclass[a4paper,12pt,oneside,openleft]{scrreprt}
+\usepackage[a4paper, top=20mm, left=1.57in, right=0.79in]{geometry}
+%\usepackage[left=2.0in, right=1.0in, top=20mm, bottom=5mm]{geometry}
+\usepackage{cite}
+%\usepackage[rootbib]{chapterbib}
+\usepackage{natbib}
+\usepackage[english,italian]{babel}
+\usepackage{textcomp}
+\usepackage[latin1]{inputenc}
+\usepackage{indentfirst}
+\usepackage{blindtext,color}
+\usepackage{floatflt}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{sidecap}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{newlfont}
+%\usepackage{layaureo}
+\usepackage{siunitx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{showkeys}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{mparhack,fixltx2e,relsize}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage{charter}
+\usepackage{microtype}
+%\usepackage{classicthesis}
+%Configurazione della pagina START
+%\geometry{left=150mm,right=-50mm,top=20mm,bottom=20mm}
+ %Configurazione della pagina END
+\usepackage{hyperref}
+\usepackage{color}
+%Configurazione URL
+\hypersetup{colorlinks,linkcolor=black,filecolor=magenta,urlcolor=cyan,citecolor=black}
+\urlstyle{same}
+%Configurazione URL
+\usepackage{csquotes,lmodern}
+\usepackage{titlesec, blindtext}
+\usepackage{titletoc}
+% impaginazione inizio
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+% impaginazione fine
+
+%Frontespizio
+\textwidth=450pt %\oddsidemargin=1.5cm
+\begin{document}
+\renewcommand\citemid{; }
+\input{Chapters/Frontespizio-dedica}
+\linespread{1.5}% interlinea
+\cleardoublepage
+\newpage \null \thispagestyle{empty} \newpage%pagina bianca
+\frenchspacing
+\raggedbottom
+\pagestyle{plain}
+\input{Chapters/Abstract}
+\newpage \null \thispagestyle{empty} \newpage%pagina bianca
+\thispagestyle{empty}%pagina vuota
+\tableofcontents %indice
+\cleardoublepage
+\newpage
+\newpage \null \thispagestyle{empty} \newpage%pagina bianca
+\pagenumbering{arabic}%inizio della numerazione delle pagine con numeri arabi
+\input{Chapters/Introduzione}
+%\input{Chapters/Materiali_e_metodi}
+%\input{Chapters/Risultati_e_discussione}
+%\input{Chapters/Conclusioni}
+%\input{Chapters/Appendice}
+\newpage
+\input{Chapters/bibliografia}
+
+\cleardoublepage
+\newpage \null \thispagestyle{empty} \newpage%pagina bianca
+%\input{Chapters/Ringraziamenti}
+\end{document}
